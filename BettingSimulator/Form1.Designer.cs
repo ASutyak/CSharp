@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lossesValue));
             this.enterPowerball = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -278,66 +279,67 @@
             // 
             // pokerDraw
             // 
-            this.pokerDraw.Location = new System.Drawing.Point(523, 228);
+            this.pokerDraw.Location = new System.Drawing.Point(537, 257);
             this.pokerDraw.Name = "pokerDraw";
             this.pokerDraw.Size = new System.Drawing.Size(75, 23);
             this.pokerDraw.TabIndex = 48;
             this.pokerDraw.Text = "Draw!";
             this.pokerDraw.UseVisualStyleBackColor = true;
+            this.pokerDraw.Click += new System.EventHandler(this.pokerDraw_Click);
             // 
             // card1
             // 
             this.card1.AutoSize = true;
-            this.card1.Image = global::BettingSimulator.Properties.Resources.blankCard;
+            this.card1.Image = ((System.Drawing.Image)(resources.GetObject("card1.Image")));
             this.card1.Location = new System.Drawing.Point(331, 158);
             this.card1.MaximumSize = new System.Drawing.Size(50, 50);
-            this.card1.MinimumSize = new System.Drawing.Size(50, 50);
+            this.card1.MinimumSize = new System.Drawing.Size(75, 75);
             this.card1.Name = "card1";
-            this.card1.Size = new System.Drawing.Size(50, 50);
+            this.card1.Size = new System.Drawing.Size(75, 75);
             this.card1.TabIndex = 49;
             // 
             // card2
             // 
             this.card2.AutoSize = true;
-            this.card2.Image = global::BettingSimulator.Properties.Resources.blankCard;
+            this.card2.Image = ((System.Drawing.Image)(resources.GetObject("card2.Image")));
             this.card2.Location = new System.Drawing.Point(436, 158);
             this.card2.MaximumSize = new System.Drawing.Size(50, 50);
-            this.card2.MinimumSize = new System.Drawing.Size(50, 50);
+            this.card2.MinimumSize = new System.Drawing.Size(75, 75);
             this.card2.Name = "card2";
-            this.card2.Size = new System.Drawing.Size(50, 50);
+            this.card2.Size = new System.Drawing.Size(75, 75);
             this.card2.TabIndex = 50;
             // 
             // card5
             // 
             this.card5.AutoSize = true;
-            this.card5.Image = global::BettingSimulator.Properties.Resources.blankCard;
+            this.card5.Image = ((System.Drawing.Image)(resources.GetObject("card5.Image")));
             this.card5.Location = new System.Drawing.Point(737, 158);
             this.card5.MaximumSize = new System.Drawing.Size(50, 50);
-            this.card5.MinimumSize = new System.Drawing.Size(50, 50);
+            this.card5.MinimumSize = new System.Drawing.Size(75, 75);
             this.card5.Name = "card5";
-            this.card5.Size = new System.Drawing.Size(50, 50);
+            this.card5.Size = new System.Drawing.Size(75, 75);
             this.card5.TabIndex = 51;
             // 
             // card4
             // 
             this.card4.AutoSize = true;
-            this.card4.Image = global::BettingSimulator.Properties.Resources.blankCard;
+            this.card4.Image = ((System.Drawing.Image)(resources.GetObject("card4.Image")));
             this.card4.Location = new System.Drawing.Point(636, 158);
             this.card4.MaximumSize = new System.Drawing.Size(50, 50);
-            this.card4.MinimumSize = new System.Drawing.Size(50, 50);
+            this.card4.MinimumSize = new System.Drawing.Size(75, 75);
             this.card4.Name = "card4";
-            this.card4.Size = new System.Drawing.Size(50, 50);
+            this.card4.Size = new System.Drawing.Size(75, 75);
             this.card4.TabIndex = 52;
             // 
             // card3
             // 
             this.card3.AutoSize = true;
-            this.card3.Image = global::BettingSimulator.Properties.Resources.blankCard;
+            this.card3.Image = ((System.Drawing.Image)(resources.GetObject("card3.Image")));
             this.card3.Location = new System.Drawing.Point(537, 158);
             this.card3.MaximumSize = new System.Drawing.Size(50, 50);
-            this.card3.MinimumSize = new System.Drawing.Size(50, 50);
+            this.card3.MinimumSize = new System.Drawing.Size(75, 75);
             this.card3.Name = "card3";
-            this.card3.Size = new System.Drawing.Size(50, 50);
+            this.card3.Size = new System.Drawing.Size(75, 75);
             this.card3.TabIndex = 53;
             // 
             // lossesValue

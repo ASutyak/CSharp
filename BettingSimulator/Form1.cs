@@ -15,6 +15,7 @@ namespace BettingSimulator
         int[] winningpowerballNumbers;
         int[] yourPowerballNumbers;
         int[] horses;
+        int[] cards;
         Image[] cardPics;
         Random rand;
         int totalLosses;
@@ -31,6 +32,8 @@ namespace BettingSimulator
             yourPowerballNumbers = new int[6] {0, 0, 0, 0, 0, 0 };
             horses = new int[5] { 0, 0, 0, 0, 0 };
             int totalLosses = 0;
+            cards = new int[5] { 0, 0, 0, 0, 0 };
+
             cardPics = new Image[52];
             cardPics[0] = Properties.Resources.AC;
             cardPics[1] = Properties.Resources.AD;
@@ -276,6 +279,22 @@ namespace BettingSimulator
             }
             return winNum + 1;
         }
+        private void pokerDraw_Click(object sender, EventArgs e)
+        {
+            totalLosses = totalLosses - 2;
+            for (int i = 0; i < 5; i++ )
+            {
+                cards[i] = rand.Next(1, 52);
+            }
+            card1.Image = cardPics[cards[0]];
+            card2.Image = cardPics[cards[1]];
+            card3.Image = cardPics[cards[2]];
+            card4.Image = cardPics[cards[3]];
+            card5.Image = cardPics[cards[4]];
+
+            if ()
+            lossDisplay.Text = totalLosses.ToString();
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -295,5 +314,7 @@ namespace BettingSimulator
         {
 
         }
+
+
     }
 }
