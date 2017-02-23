@@ -53,6 +53,13 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.winningHorse = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pokerDraw = new System.Windows.Forms.Button();
+            this.card1 = new System.Windows.Forms.Label();
+            this.card2 = new System.Windows.Forms.Label();
+            this.card5 = new System.Windows.Forms.Label();
+            this.card4 = new System.Windows.Forms.Label();
+            this.card3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // enterPowerball
@@ -95,7 +102,7 @@
             // losses
             // 
             this.losses.AutoSize = true;
-            this.losses.Location = new System.Drawing.Point(437, 11);
+            this.losses.Location = new System.Drawing.Point(721, 6);
             this.losses.Name = "losses";
             this.losses.Size = new System.Drawing.Size(57, 17);
             this.losses.TabIndex = 21;
@@ -103,7 +110,7 @@
             // 
             // lossDisplay
             // 
-            this.lossDisplay.Location = new System.Drawing.Point(500, 8);
+            this.lossDisplay.Location = new System.Drawing.Point(784, 6);
             this.lossDisplay.Name = "lossDisplay";
             this.lossDisplay.Size = new System.Drawing.Size(76, 22);
             this.lossDisplay.TabIndex = 22;
@@ -195,7 +202,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 297);
+            this.button1.Location = new System.Drawing.Point(8, 241);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 35;
@@ -205,7 +212,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(104, 297);
+            this.button2.Location = new System.Drawing.Point(8, 279);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 36;
@@ -215,7 +222,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(195, 297);
+            this.button3.Location = new System.Drawing.Point(8, 318);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 37;
@@ -225,7 +232,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(286, 297);
+            this.button4.Location = new System.Drawing.Point(8, 357);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 38;
@@ -235,7 +242,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(380, 297);
+            this.button5.Location = new System.Drawing.Point(8, 401);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 39;
@@ -246,7 +253,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(152, 198);
+            this.label4.Location = new System.Drawing.Point(40, 198);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(158, 17);
             this.label4.TabIndex = 45;
@@ -255,16 +262,97 @@
             // 
             // winningHorse
             // 
-            this.winningHorse.Location = new System.Drawing.Point(144, 260);
+            this.winningHorse.Location = new System.Drawing.Point(102, 318);
             this.winningHorse.Name = "winningHorse";
             this.winningHorse.Size = new System.Drawing.Size(166, 22);
             this.winningHorse.TabIndex = 46;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(508, 93);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(119, 17);
+            this.label5.TabIndex = 47;
+            this.label5.Text = "Poker! $2 A Hand";
+            // 
+            // pokerDraw
+            // 
+            this.pokerDraw.Location = new System.Drawing.Point(523, 228);
+            this.pokerDraw.Name = "pokerDraw";
+            this.pokerDraw.Size = new System.Drawing.Size(75, 23);
+            this.pokerDraw.TabIndex = 48;
+            this.pokerDraw.Text = "Draw!";
+            this.pokerDraw.UseVisualStyleBackColor = true;
+            // 
+            // card1
+            // 
+            this.card1.AutoSize = true;
+            this.card1.Image = global::BettingSimulator.Properties.Resources.blankCard;
+            this.card1.Location = new System.Drawing.Point(331, 158);
+            this.card1.MaximumSize = new System.Drawing.Size(50, 50);
+            this.card1.MinimumSize = new System.Drawing.Size(50, 50);
+            this.card1.Name = "card1";
+            this.card1.Size = new System.Drawing.Size(50, 50);
+            this.card1.TabIndex = 49;
+            // 
+            // card2
+            // 
+            this.card2.AutoSize = true;
+            this.card2.Image = global::BettingSimulator.Properties.Resources.blankCard;
+            this.card2.Location = new System.Drawing.Point(436, 158);
+            this.card2.MaximumSize = new System.Drawing.Size(50, 50);
+            this.card2.MinimumSize = new System.Drawing.Size(50, 50);
+            this.card2.Name = "card2";
+            this.card2.Size = new System.Drawing.Size(50, 50);
+            this.card2.TabIndex = 50;
+            // 
+            // card5
+            // 
+            this.card5.AutoSize = true;
+            this.card5.Image = global::BettingSimulator.Properties.Resources.blankCard;
+            this.card5.Location = new System.Drawing.Point(737, 158);
+            this.card5.MaximumSize = new System.Drawing.Size(50, 50);
+            this.card5.MinimumSize = new System.Drawing.Size(50, 50);
+            this.card5.Name = "card5";
+            this.card5.Size = new System.Drawing.Size(50, 50);
+            this.card5.TabIndex = 51;
+            // 
+            // card4
+            // 
+            this.card4.AutoSize = true;
+            this.card4.Image = global::BettingSimulator.Properties.Resources.blankCard;
+            this.card4.Location = new System.Drawing.Point(636, 158);
+            this.card4.MaximumSize = new System.Drawing.Size(50, 50);
+            this.card4.MinimumSize = new System.Drawing.Size(50, 50);
+            this.card4.Name = "card4";
+            this.card4.Size = new System.Drawing.Size(50, 50);
+            this.card4.TabIndex = 52;
+            // 
+            // card3
+            // 
+            this.card3.AutoSize = true;
+            this.card3.Image = global::BettingSimulator.Properties.Resources.blankCard;
+            this.card3.Location = new System.Drawing.Point(537, 158);
+            this.card3.MaximumSize = new System.Drawing.Size(50, 50);
+            this.card3.MinimumSize = new System.Drawing.Size(50, 50);
+            this.card3.Name = "card3";
+            this.card3.Size = new System.Drawing.Size(50, 50);
+            this.card3.TabIndex = 53;
             // 
             // lossesValue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 436);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(861, 436);
+            this.Controls.Add(this.card3);
+            this.Controls.Add(this.card4);
+            this.Controls.Add(this.card5);
+            this.Controls.Add(this.card2);
+            this.Controls.Add(this.card1);
+            this.Controls.Add(this.pokerDraw);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.winningHorse);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button5);
@@ -323,6 +411,13 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox winningHorse;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button pokerDraw;
+        private System.Windows.Forms.Label card1;
+        private System.Windows.Forms.Label card2;
+        private System.Windows.Forms.Label card5;
+        private System.Windows.Forms.Label card4;
+        private System.Windows.Forms.Label card3;
     }
 }
 

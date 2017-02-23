@@ -15,6 +15,7 @@ namespace BettingSimulator
         int[] winningpowerballNumbers;
         int[] yourPowerballNumbers;
         int[] horses;
+        Image[] cardPics;
         Random rand;
         int totalLosses;
         
@@ -30,6 +31,60 @@ namespace BettingSimulator
             yourPowerballNumbers = new int[6] {0, 0, 0, 0, 0, 0 };
             horses = new int[5] { 0, 0, 0, 0, 0 };
             int totalLosses = 0;
+            cardPics = new Image[52];
+            cardPics[0] = Properties.Resources.AC;
+            cardPics[1] = Properties.Resources.AD;
+            cardPics[2] = Properties.Resources.AH;
+            cardPics[3] = Properties.Resources.AS;
+            cardPics[4] = Properties.Resources.X2C;
+            cardPics[5] = Properties.Resources.X2D;
+            cardPics[6] = Properties.Resources.X2H;
+            cardPics[7] = Properties.Resources.X2S;
+            cardPics[8] = Properties.Resources.X3C;
+            cardPics[9] = Properties.Resources.X3D;
+            cardPics[10] = Properties.Resources.X3H;
+            cardPics[11] = Properties.Resources.X3S;
+            cardPics[12] = Properties.Resources.X4C;
+            cardPics[13] = Properties.Resources.X4D;
+            cardPics[14] = Properties.Resources.X4H;
+            cardPics[15] = Properties.Resources.X4S;
+            cardPics[16] = Properties.Resources.X5C;
+            cardPics[17] = Properties.Resources.X5D;
+            cardPics[18] = Properties.Resources.X5H;
+            cardPics[19] = Properties.Resources.X5S;
+            cardPics[20] = Properties.Resources.X6C;
+            cardPics[21] = Properties.Resources.X6D;
+            cardPics[22] = Properties.Resources.X6H;
+            cardPics[23] = Properties.Resources.X6S;
+            cardPics[24] = Properties.Resources.X7C;
+            cardPics[25] = Properties.Resources.X7D;
+            cardPics[26] = Properties.Resources.X7H;
+            cardPics[27] = Properties.Resources.X7S;
+            cardPics[28] = Properties.Resources.X8C;
+            cardPics[29] = Properties.Resources.X8D;
+            cardPics[30] = Properties.Resources.X8H;
+            cardPics[31] = Properties.Resources.X8S;
+            cardPics[32] = Properties.Resources.X9C;
+            cardPics[33] = Properties.Resources.X9D;
+            cardPics[34] = Properties.Resources.X9H;
+            cardPics[35] = Properties.Resources.X9S;
+            cardPics[36] = Properties.Resources.X10C;
+            cardPics[37] = Properties.Resources.X10D;
+            cardPics[38] = Properties.Resources.X10H;
+            cardPics[39] = Properties.Resources.X10S;
+            cardPics[40] = Properties.Resources.JC;
+            cardPics[41] = Properties.Resources.JD;
+            cardPics[42] = Properties.Resources.JH;
+            cardPics[43] = Properties.Resources.JS;
+            cardPics[44] = Properties.Resources.QC;
+            cardPics[45] = Properties.Resources.QD;
+            cardPics[46] = Properties.Resources.QH;
+            cardPics[47] = Properties.Resources.QS;
+            cardPics[48] = Properties.Resources.KC;
+            cardPics[49] = Properties.Resources.KD;
+            cardPics[50] = Properties.Resources.KH;
+            cardPics[51] = Properties.Resources.KS;
+
         }
 
         private void enterPowerball_Click(object sender, EventArgs e)
