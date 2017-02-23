@@ -61,6 +61,7 @@
             this.card5 = new System.Windows.Forms.Label();
             this.card4 = new System.Windows.Forms.Label();
             this.card3 = new System.Windows.Forms.Label();
+            this.pokerWin = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // enterPowerball
@@ -342,12 +343,20 @@
             this.card3.Size = new System.Drawing.Size(75, 75);
             this.card3.TabIndex = 53;
             // 
+            // pokerWin
+            // 
+            this.pokerWin.Location = new System.Drawing.Point(470, 133);
+            this.pokerWin.Name = "pokerWin";
+            this.pokerWin.Size = new System.Drawing.Size(206, 22);
+            this.pokerWin.TabIndex = 54;
+            // 
             // lossesValue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(861, 436);
+            this.Controls.Add(this.pokerWin);
             this.Controls.Add(this.card3);
             this.Controls.Add(this.card4);
             this.Controls.Add(this.card5);
@@ -420,6 +429,7 @@
         private System.Windows.Forms.Label card5;
         private System.Windows.Forms.Label card4;
         private System.Windows.Forms.Label card3;
+        private System.Windows.Forms.TextBox pokerWin;
     }
 }
 

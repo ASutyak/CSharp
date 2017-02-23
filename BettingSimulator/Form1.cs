@@ -16,6 +16,8 @@ namespace BettingSimulator
         int[] yourPowerballNumbers;
         int[] horses;
         int[] cards;
+        int[] cardNum;
+        int[] cardSuit;
         Image[] cardPics;
         Random rand;
         int totalLosses;
@@ -33,6 +35,9 @@ namespace BettingSimulator
             horses = new int[5] { 0, 0, 0, 0, 0 };
             int totalLosses = 0;
             cards = new int[5] { 0, 0, 0, 0, 0 };
+            cardNum = new int[5] { 0, 0, 0, 0, 0 };
+            cardSuit = new int[5] { 0, 0, 0, 0, 0 };
+
 
             cardPics = new Image[52];
             cardPics[0] = Properties.Resources.AC;
@@ -281,7 +286,9 @@ namespace BettingSimulator
         }
         private void pokerDraw_Click(object sender, EventArgs e)
         {
+            int numOfPairs = 0;
             totalLosses = totalLosses - 2;
+            pokerWin.Text = " ";
             for (int i = 0; i < 5; i++ )
             {
                 cards[i] = rand.Next(1, 52);
@@ -292,8 +299,299 @@ namespace BettingSimulator
             card4.Image = cardPics[cards[3]];
             card5.Image = cardPics[cards[4]];
 
-            if ()
-            lossDisplay.Text = totalLosses.ToString();
+            for (int j = 0; j < 5; j++)
+            {
+                if (cards[j] <= 4)
+                {
+                    cardNum[j] = 1;
+                    if (cards[j] == 0)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 1)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 2)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else if (cards[j] <= 8)
+                {
+                    cardNum[j] = 2;
+                    if (cards[j] == 5)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 6)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 7)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else if (cards[j] <= 12)
+                {
+                    cardNum[j] = 3;
+                    if (cards[j] == 9)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 10)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 11)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else if (cards[j] <= 16)
+                {
+                    cardNum[j] = 4;
+                    if (cards[j] == 13)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 14)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 15)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else if (cards[j] <= 20)
+                {
+                    cardNum[j] = 5;
+                    if (cards[j] == 17)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 18)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 19)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else if (cards[j] <= 24)
+                {
+                    cardNum[j] = 6;
+                    if (cards[j] == 21)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 22)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 23)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else if (cards[j] <= 28)
+                {
+                    cardNum[j] = 7;
+                    if (cards[j] == 25)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 26)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 27)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else if (cards[j] <= 32)
+                {
+                    cardNum[j] = 8;
+                    if (cards[j] == 29)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 30)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 31)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else if (cards[j] <= 36)
+                {
+                    cardNum[j] = 9;
+                    if (cards[j] == 33)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 34)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 35)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else if (cards[j] <= 40)
+                {
+                    cardNum[j] = 10;
+                    if (cards[j] == 37)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 38)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 39)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else if (cards[j] <= 44)
+                {
+                    cardNum[j] = 11;
+                    if (cards[j] == 41)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 42)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 43)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else if (cards[j] <= 48)
+                {
+                    cardNum[j] = 12;
+                    if (cards[j] == 45)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 46)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 47)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+                else
+                {
+                    cardNum[j] = 13;
+                    if (cards[j] == 49)
+                    {
+                        cardSuit[j] = 1;
+                    }
+                    else if (cards[j] == 50)
+                    {
+                        cardSuit[j] = 2;
+                    }
+                    else if (cards[j] == 51)
+                    {
+                        cardSuit[j] = 3;
+                    }
+                    else
+                    {
+                        cardSuit[j] = 4;
+                    }
+                }
+            }
+            if (cardSuit[0] == cardSuit[1] && cardSuit[0] == cardSuit[2] && cardSuit[0] == cardSuit[3] && cardSuit[0] == cardSuit[4])
+            {
+                pokerWin.Text = "Flush! You win $50";
+                totalLosses = totalLosses + 50;
+            }
+            for (int k = 0; k < 5; k++)
+            {
+                for (int l = 1; l < 5; l++)
+                {
+                    if (cardNum[k] == cardNum[l])
+                    {
+                        numOfPairs++;
+                    }
+                }
+            }
+            if (numOfPairs > 0)
+            {
+                if (numOfPairs == 1)
+                {
+                    pokerWin.Text = "1 Pair! You win $3";
+                    totalLosses = totalLosses + 3;
+                }
+                else
+                {
+                    pokerWin.Text = "2 Pair! You win $10";
+                    totalLosses = totalLosses + 3;
+                }
+
+            }
+                lossDisplay.Text = totalLosses.ToString();
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
